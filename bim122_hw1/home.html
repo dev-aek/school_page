@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eskisehir Technical University - Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .stbutton {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .stdrop {
+            position: relative;
+            display: inline-block;
+        }
+
+        .stdrop-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .stdrop-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .stdrop-content a:hover {
+            border: 2px solid grey;
+            background-color: #911D0E;
+            color: white;
+        }
+
+        .stdrop:hover .stdrop-content {
+            display: block;
+
+        }
+
+        .stdrop:hover .sttbtn {
+            background-color: #f1f1f1;
+        }
+
+        .body {
+            display: flex;
+        }
+
+        .head {
+            text-align: center;
+            border: 2px solid grey;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .imageContainer {
+            image-rendering:optimizeQuality;
+            text-align: center;
+        }
+
+        .image {
+            margin: 10px;
+        }
+
+        .image:hover {
+            transform: scale(1.2);
+        }
+
+        .bodyLeft ul {
+            border: 1px solid grey;
+            border-radius: 3px;
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .bodyLeft li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .bodyLeft li a:hover {
+            background-color: #911D0E;
+            color: white;
+        }
+
+        .left-rigt-container{
+            margin-left: 70px;
+            margin-right: 30px;
+        }
+
+        .bodyRight {
+            display: inline-block;
+            border: 1px solid grey;
+            border-radius: 3px;
+            margin-left: 75px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        .bodyRight li {
+            border: 1px solid grey;
+            border-radius: 3px;
+            width: 85%;
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="left-rigt-container">
+    <div class="head">
+        <img src="estu_logo.svg" class="image" style="width: 30%;">
+    </div>
+    <br>
+    <div class="body">
+        <div class="bodyLeft">
+            <ul>
+                <li><a href="home.html" style="font-size: larger;"> <strong>Home</strong></a></li>
+                <li><a href="university.html"> University</a></li>
+                <li><a href="academics.html"> Academics</a></li>
+                <div class="stdrop">
+                    <li><a href="students.html" class="stbtn"> Students</a></li>
+                    <!-- I know this gives an validate error, but i could not fix it for hover and select part -->
+                    <div class="stdrop-content">
+                        <a href="login.html">Login</a>
+                        <a href="documents.html">Documents</a>
+                    </div>
+                </div>
+                <li><a href="research.html"> Research</a></li>
+                <li><a href="campuslife.html"> Campus Life</a></li>
+            </ul>
+        </div>
+        <div class="bodyRight">
+            <div class="imageContainer">
+                <img src="estu-home.jpg" alt="estu home" class="image">
+            </div>
+            <h2>Duyurular</h2>
+            <ul>
+                <li><strong>Yemekhane Ücretlerine Zam </strong>Döviz kurundaki artış nedeniyle 2.5 TL olan yemek
+                    ücretleri 3 TL'ye çıkarılmıştır.</li>
+                <li><strong>Okulumuza Yeni Otobüs Hattı </strong>Muttalip mevkinde KYK yurdunda kalan öğrencilerimiz
+                    için M6 adında okulumuz ve muttalip arasında görev yapacak otobüs hattı tanımlanmıştır.</li>
+                <li><strong>Sınavlar </strong>1. ara sınavlar 10-14 Nisan, 2. ara sınavlar 20-24 Nisan arasında
+                    gerçekleştirilecektir.</li>
+                <li><strong>Yatay Geçiş Başvurusu </strong>Yatay geçiş başvuru sonuçları ilgili bölümlerin websitesinde
+                    duyurulmuştur.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div style="color: #911D0E;">
+        <br><br>
+        develop by Abdullah Enes Kocabuğa for İnternet Programing Homework
+    </div>
+</body>
+
+</html>

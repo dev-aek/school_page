@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eskisehir Technical University - Home Page</title>
+	<link rel="stylesheet" href="styles.css">
+	<style type="text/css">
+		.studentbtn {
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+
+		.studentdrop {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.studentdrop-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.studentdrop-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.studentdrop-content a:hover {background-color: #911D0E;color: white;}
+
+		.studentdrop:hover .studentdrop-content {
+		  display: block;
+		  
+		}
+
+		.studentdrop:hover .studentbtn {
+		  background-color: #f1f1f1;
+		}
+        .body {
+            display: flex;
+        }
+
+        .head {
+            text-align: center;
+            border: 2px solid grey;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .imageContainer {
+            image-rendering:optimizeQuality;
+            text-align: center;
+        }
+
+        .image {
+            margin: 10px;
+        }
+
+        .image:hover {
+            transform: scale(1.2);
+        }
+
+        .bodyLeft ul {
+            border: 1px solid grey;
+            border-radius: 3px;
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .bodyLeft li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .bodyLeft li a:hover {
+            background-color: #911D0E;
+            color: white;
+        }
+
+        .left-rigt-container{
+            margin-left: 70px;
+            margin-right: 30px;
+        }
+
+        .bodyRight {
+            display:flexbox;
+            border: 1px solid grey;
+            border-radius: 3px;
+            margin-left: 75px;
+            padding: 10px;
+            width: 90%;
+        }
+	</style>
+</head>
+<body class="left-rigt-container">
+    <div class="head">
+        <img src="estu_logo.svg" class="image" style="width: 30%;">
+    </div>
+	<br>
+	<div class = "body">
+		<div class = "bodyLeft">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="university.html"> University</a></li>
+				<li><a href="academics.html"> Academics</a></li>
+				<div class ="studentdrop">
+					<li><a href="students.html" class="studentbtn" style="font-size: larger;"> <strong>Students</strong></a></li> <!-- I know this gives an validate error, but i could not fix it for hover and select part -->
+					<div class = "studentdrop-content">
+					    <a href="login.html">Login</a>
+					    <a href="documents.html">Documents</a>
+					</div>
+				</div>
+
+				<li><a href="research.html">Research</a></li>
+				<li><a href="campuslife.html"> Campus Life</a></li>
+			</ul>
+		</div>
+		<div class = "bodyRight">
+			<h2>Genel Kabul Şartları</h2>
+			Türkiye'de Yükseköğretim Kurumlarının önlisans ve lisans programlarına öğrenci alımında merkezî yerleştirme ve özel yetenek sınavı uygulanmaktadır. Merkezî yerleştirme; Ölçme, Seçme ve Yerleştirme Merkezi (ÖSYM) tarafından gerçekleştirilen Yükseköğretim Kurumları Sınavı (YKS) ile yapılmaktadır.
+			<hr>
+			<h2>AKTS Kredi Sistemi</h2>
+			“AKTS, öğrenme çıktılarına ve öğrenim sürecinin şeffaflığına dayanan öğrenci merkezli bir kredi biriktirme ve transfer sistemidir. AKTS öğrenci değişimi kadar yeterlikler ve öğrenme parçaları için planlamayı, ulaştırmayı, değerlendirmeyi, tanınmayı ve geçerliği kolaylaştırmayı amaçlamaktadır. AKTS, yükseköğretimde yaygın olarak kullanılmakla birlikte diğer hayat boyu öğrenme etkinliklerinde de uygulanabilmektedir.
+			<hr>
+			<h2>Kayıt İşlemleri</h2>
+			Üniversiteye kayıt yaptırmaya hak kazanan tüm aday öğrenciler, her öğretim yılı başında Bakanlar Kurulu Kararıyla belirlenen katkı payını/öğrenim ücreti tutarını ödemesi hâlinde kesin kayıt için istenen belgeler ile birlikte ilgili birimin kayıt bürosuna başvurarak veya e-devlet üzerinden kayıt yaptırabilmektedir.
+
+		</div>
+	</div>
+    <div style="color: #911D0E;">
+        <br><br>
+        develop by Abdullah Enes Kocabuğa for İnternet Programing Homework
+    </div>
+	</body>
+	
+</html>
